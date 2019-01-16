@@ -5,10 +5,6 @@ class DetailItem {
     String itemName
 
     static constraints = {
-        itemName nullable: false, blank: false
-    }
-
-    static mapping = {
-        itemName unique: 'master'
+        itemName nullable: false, blank: false, unique: 'master'
     }
 }

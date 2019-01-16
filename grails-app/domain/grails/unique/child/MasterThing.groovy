@@ -5,4 +5,8 @@ class MasterThing {
 
     static constraints = {
     }
+
+    static mapping = {
+        details cascade: 'all-delete-orphan'
+    }
 }
